@@ -1,24 +1,58 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
+| Column             | Type   | Options                 | 
+| ------------------ | ------ | ----------------------- | 
+| nickname           | string | null:false              | 
+| email              | string | null:false,unique: true | 
+| encrypted_password | string | null:false              | 
 
-Things you may want to cover:
+### Association
+- has_many :incomes
+- has_many :expenditures
+- has_many :differences
 
-* Ruby version
+## incomes テーブル
+| Column        | Type       | Options                       | 
+| ------------- | ---------- | ----------------------------- | 
+| category_id   | integer    | null:false                    | 
+| income_amount | integer    | null:false                    | 
+| register_day  | date       | null:false                    | 
+| user          | references | null:false, foreign_key: true | 
+| difference    | references | null:false, foreign_key: true | 
 
-* System dependencies
+### Association
+- belongs_to :user
+- has_many :expenditures
+- has_many :differences
 
-* Configuration
+## expenditures テーブル
+| Column             | Type       | Options                       | 
+| ------------------ | ---------- | ----------------------------- | 
+| category_id        | integer    | null:false                    | 
+| expenditure_amount | integer    | null:false                    | 
+| register_day       | date       | null:false                    | 
+| user               | references | null:false, foreign_key: true | 
+| income             | references | null:false, foreign_key: true | 
+| difference         | references | null:false, foreign_key: true | 
 
-* Database creation
+### Association
+- belongs_to :user
+- belongs_to :income
+- has_many :differences
 
-* Database initialization
+## differences テーブル
+| Column            | Type       | Options                      | 
+| ----------------- | ---------- | ---------------------------- | 
+| register_day      | date       | null:false                   | 
+| total_income      | integer    | null:false                   | 
+| total_expenditure | integer    | null:false                   | 
+| difference        | integer    | null:false                   | 
+| user              | references | null:false,foreign_key: true | 
+| income            | references | null:false,foreign_key: true | 
+| expenditure       | references | null:false,foreign_key: true | 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
+- belongs_to :income
+- belongs_to :expenditure
