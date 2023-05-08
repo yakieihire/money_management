@@ -39,7 +39,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f4cfa7;
+  background-color: #b6c7f3;
   height: 90px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -83,23 +83,23 @@ a {
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: rgb(131, 55, 11);
+  color: #093aab(131, 55, 11);
   text-decoration: none;
   user-select: none;
-  border: 1px #8e651d solid;
+  border: 1px #093aab solid;
   border-radius: 3px;
   transition: 0.4s ease;
 }
 .nav__btn:hover{
   color: #fff;
-  background: rgb(208, 187, 165);
+  background: rgb(165, 189, 208);
 }
 
 .nav__logout{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #ab5a09;
+  color: #093aab;
   text-decoration: none;
   user-select: none;
 }
@@ -134,7 +134,7 @@ a {
   height: 35vh;
 }
 .block {
-  background-color: #ead7b4;
+  background-color: #093aab;
   position: relative;
   width: 550px;
   height: 200px;
@@ -261,7 +261,7 @@ a {
 }
 
 .more ul.more_list li a:hover {
-  background-color: #e5b761;
+  background-color: #093aab;
   color: #fff;
 }
 .preview-image {
@@ -379,6 +379,6 @@ form input[type="submit"] {
 }
 
 .contents_row {
-  background-color: #ead7b4;
+  background-color: #b6c7f3;
   height: 100vh;
 }
