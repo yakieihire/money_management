@@ -1,0 +1,348 @@
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4cfa7;
+  height: 90px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image_restaurant {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 30%;
+  right: 0vw;
+}
+.image_restaurant_a {
+  position: absolute;
+  top: 112.8vh;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 30%;
+  right: 0vw;
+}
+.inner {
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.nav__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: rgb(131, 55, 11);
+  text-decoration: none;
+  user-select: none;
+  border: 1px #8e651d solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.nav__btn:hover{
+  color: #fff;
+  background: rgb(208, 187, 165);
+}
+
+.nav__logout{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #ab5a09;
+  text-decoration: none;
+  user-select: none;
+}
+
+
+/* メイン */
+
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: left;
+  min-height: calc(100vh - 161px);
+}
+.card {
+  position: absolute;
+  color: black;
+  top: 100px;
+  left: 30px;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.shop_list {
+  position: relative;
+  height: 35vh;
+}
+.block {
+  background-color: #ead7b4;
+  position: relative;
+  width: 550px;
+  height: 200px;
+  top: 100px;
+  border-radius: 10px 10px;
+}
+.shop_imege {
+  object-fit: cover;
+  position: absolute;
+  left: 24vw;
+  top: 5vh;
+  width: 36%;
+}
+
+
+.card__title {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 30px 20px;
+}
+.card__summary {
+  font-size: 20px;
+  padding: 0 20px;
+}
+.logo_t {
+  position: absolute;
+  left: 550px;
+  bottom: 83vh;
+}
+
+.logo_y{
+  height: 250px;
+  width: 250px;
+  position: relative;
+  top: 80px;
+  left: 30px;
+}
+.logo_g {
+  position: relative;
+  bottom: 8vh;
+  left: 18vw;
+}
+.shop-show {
+  display: flex;
+}
+.image_restaurant_g {
+  width: 1024vw;
+  opacity: 30%;
+}
+.shop-box {
+  background-color: white;
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  top: 100px;
+  left: 70px;
+}
+.shop-box-img {
+  width: 26vw;
+  height: 30vh;
+  position: relative;
+  left: 63vw;
+  top: 5vh;
+  object-fit: cover;
+}
+
+.detail-table {
+  position: absolute;
+  bottom: 20vh;
+  left: 60px;
+  font-weight: 800;
+  font-size: 1.3em;
+  padding: 50px 0;
+}
+.detail-item {
+  padding: 15px;
+}
+.logo_a {
+  height: 190px;
+  width: 190px;
+}
+
+.more {
+  position: absolute;
+  cursor: pointer;
+  top: 100px;
+  right: 8px;
+  z-index: 2;
+  height: 100px;
+  width: 80px;
+  text-align: right;
+}
+
+.more:hover ul.more_list {
+  display: block;
+}
+
+.more ul.more_list {
+  position: absolute;
+  text-align: left;
+  width: 80px;
+  right: 0;
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.more ul.more_list li {
+  border-bottom: 1px solid #ddd;
+}
+
+.more ul.more_list li:last-child {
+  border-bottom: 0;
+}
+
+.more ul.more_list li a {
+  display: block;
+  padding: 5px;
+}
+
+.more ul.more_list li a:hover {
+  background-color: #e5b761;
+  color: #fff;
+}
+.preview-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.other-images {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  left: 73vw;
+  top: 5vh;
+  object-fit: contain;
+}
+
+
+.image-delete-button {
+  text-align: center;
+  border: solid 1px;
+  cursor: pointer;
+  width: 50px;
+}
+
+.main-image {
+  height: 200px;
+  width: 200px;
+}
+.more_list_a {
+  position: relative;
+  bottom: 400px;
+  left: 20px;
+  font-weight: 600;
+}
+.more_list_w {
+  padding: 10px 0;
+}
+
+.header_a {
+  background-color: #6ba8cc;
+  height: 90px;
+}
+
+.card_a {
+  position: absolute;
+  color: black;
+  top: 20px;
+  left: 40vw;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.search-form {
+  display: flex;
+  position: absolute;
+  left: 26vw;
+  top: 3vh;
+}
+
+.search-form .search-input {
+  padding: 10px 80px 10px 5px ;
+}
+
+.search-form .search-btn {
+  width: 10vw;
+}
+
+body {
+  line-height: 1.57;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #9f6309;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+
+form input,
+form textarea {
+  width: 80%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+form input[type="submit"] {
+  background-color: #15cb34;
+  border-radius: 10px;
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+}
+
+.container {
+  position: relative;
+  top: 15vh;
+  left: 10vw;
+}
+
+.contents_row {
+  background-color: #ead7b4;
+  height: 100vh;
+}
