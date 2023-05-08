@@ -1,3 +1,39 @@
+/* リセットCSS */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN W3", sans-serif;
+  color: #3b4043;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  color: #3b4043;
+}
+
 /* ヘッダー */
 .header {
   display: flex;
@@ -39,8 +75,8 @@
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 .nav__btn{
@@ -128,7 +164,7 @@
 .logo_t {
   position: absolute;
   left: 550px;
-  bottom: 83vh;
+  bottom: 80vh;
 }
 
 .logo_y{
