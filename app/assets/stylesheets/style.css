@@ -44,23 +44,6 @@ a {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.image_restaurant {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 30%;
-  right: 0vw;
-}
-.image_restaurant_a {
-  position: absolute;
-  top: 112.8vh;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 30%;
-  right: 0vw;
-}
 .inner {
   width: 1024px;
   height: 100%;
@@ -107,60 +90,6 @@ a {
 
 /* メイン */
 
-.card__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: left;
-  min-height: calc(100vh - 161px);
-}
-.card {
-  position: absolute;
-  color: black;
-  top: 100px;
-  left: 30px;
-  font-weight: 600;
-  font-size: 2em;
-}
-
-.main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.shop_list {
-  position: relative;
-  height: 35vh;
-}
-.block {
-  background-color: #093aab;
-  position: relative;
-  width: 550px;
-  height: 200px;
-  top: 100px;
-  border-radius: 10px 10px;
-}
-.shop_imege {
-  object-fit: cover;
-  position: absolute;
-  left: 24vw;
-  top: 5vh;
-  width: 36%;
-}
-
-
-.card__title {
-  display: block;
-  font-size: 30px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  padding: 30px 20px;
-}
-.card__summary {
-  font-size: 20px;
-  padding: 0 20px;
-}
 .logo_t {
   position: absolute;
   left: 550px;
@@ -174,160 +103,12 @@ a {
   top: 80px;
   left: 30px;
 }
-.logo_g {
-  position: relative;
-  bottom: 8vh;
-  left: 18vw;
-}
-.shop-show {
-  display: flex;
-}
-.image_restaurant_g {
-  width: 1024vw;
-  opacity: 30%;
-}
-.shop-box {
-  background-color: white;
-  width: 90vw;
-  height: 90vh;
-  position: absolute;
-  top: 100px;
-  left: 70px;
-}
-.shop-box-img {
-  width: 26vw;
-  height: 30vh;
-  position: relative;
-  left: 63vw;
-  top: 5vh;
-  object-fit: cover;
-}
-
-.detail-table {
-  position: absolute;
-  bottom: 20vh;
-  left: 60px;
-  font-weight: 800;
-  font-size: 1.3em;
-  padding: 50px 0;
-}
-.detail-item {
-  padding: 15px;
-}
-.logo_a {
-  height: 190px;
-  width: 190px;
-}
-
-.more {
-  position: absolute;
-  cursor: pointer;
-  top: 100px;
-  right: 8px;
-  z-index: 2;
-  height: 100px;
-  width: 80px;
-  text-align: right;
-}
-
-.more:hover ul.more_list {
-  display: block;
-}
-
-.more ul.more_list {
-  position: absolute;
-  text-align: left;
-  width: 80px;
-  right: 0;
-  font-size: 12px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  display: none;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-}
-
-.more ul.more_list li {
-  border-bottom: 1px solid #ddd;
-}
-
-.more ul.more_list li:last-child {
-  border-bottom: 0;
-}
-
-.more ul.more_list li a {
-  display: block;
-  padding: 5px;
-}
-
-.more ul.more_list li a:hover {
-  background-color: #093aab;
-  color: #fff;
-}
-.preview-image {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-}
-
-.other-images {
-  position: relative;
-  height: 200px;
-  width: 200px;
-  left: 73vw;
-  top: 5vh;
-  object-fit: contain;
-}
 
 
-.image-delete-button {
-  text-align: center;
-  border: solid 1px;
-  cursor: pointer;
-  width: 50px;
-}
 
 .main-image {
   height: 200px;
   width: 200px;
-}
-.more_list_a {
-  position: relative;
-  bottom: 400px;
-  left: 20px;
-  font-weight: 600;
-}
-.more_list_w {
-  padding: 10px 0;
-}
-
-.header_a {
-  background-color: #6ba8cc;
-  height: 90px;
-}
-
-.card_a {
-  position: absolute;
-  color: black;
-  top: 20px;
-  left: 40vw;
-  font-weight: 600;
-  font-size: 2em;
-}
-
-.search-form {
-  display: flex;
-  position: absolute;
-  left: 26vw;
-  top: 3vh;
-}
-
-.search-form .search-input {
-  padding: 10px 80px 10px 5px ;
-}
-
-.search-form .search-btn {
-  width: 10vw;
 }
 
 body {
@@ -338,21 +119,6 @@ body {
   font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   margin: 0;
 }
-
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
-a:hover {
-  color: #9f6309;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-
 
 form input,
 form textarea {

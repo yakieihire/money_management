@@ -8,7 +8,7 @@
         <div class="nav__right">
           <%= link_to current_user.nickname, "#", class: "user-nickname" %>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "nav__logout" %>
-          <%# link_to "お店を登録", new_shop_path, class: "nav__btn" %>
+          <%= link_to "収支を登録", new_income_path, class: "nav__btn" %>
         </div>
       <% else %>
         <div class="nav__right">
@@ -19,3 +19,54 @@
     </div>
   </div>
 </header>
+<body>
+
+
+  <h2>収入</h2>
+<% @income.each do |income| %>
+  <table>
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>金額</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><%= income.register_day %></td>
+          <td><%= income.income_amount %>円</td>
+        </tr>
+    </tbody>
+  </table>
+<% end %>
+    <tr>
+      <td><strong>合計</strong></td>
+      <td><%= @income.sum(:income_amount) %>円</td>
+    </tr>
+
+<h2>支出</h2>
+<table>
+  <thead>
+    <tr>
+      <th>日付</th>
+      <th>金額</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+
+<h2>差額</h2>
+<table>
+  <thead>
+    <tr>
+      <th>日付</th>
+      <th>差額</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+</body>
