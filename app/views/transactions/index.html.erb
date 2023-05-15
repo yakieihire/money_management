@@ -21,16 +21,28 @@
 </header>
 <body>
 
-<h2>収入</h2>
-<table>
-  <thead>
-    <tr>
-      <th>日付</th>
-      <th>金額</th>
-    </tr>
-  </thead>
 
-</table>
+  <h2>収入</h2>
+<% @income.each do |income| %>
+  <table>
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>金額</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><%= income.register_day %></td>
+          <td><%= income.income_amount %>円</td>
+        </tr>
+    </tbody>
+  </table>
+<% end %>
+    <tr>
+      <td><strong>合計</strong></td>
+      <td><%= @income.sum(:income_amount) %>円</td>
+    </tr>
 
 <h2>支出</h2>
 <table>
