@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :incomes, only: [:index, :new ,:create]
-  resources :expenses, only: [:index]
+  resources :incomes, only: [:new ,:create]
+  resources :expenses, only: [:new ,:create]
   resources :diffs, only: [:index]
 
   root 'transactions#index'
