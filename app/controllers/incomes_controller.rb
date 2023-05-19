@@ -17,6 +17,6 @@ class IncomesController < ApplicationController
 
   private
   def income_params
-    params.require(:income).permit(:category_id,:income_amount,:register_day).merge(user_id: current_user.id)
+    params.require(:income).permit(:income_amount,:register_day).merge(user_id: current_user.id)
   end
 end
