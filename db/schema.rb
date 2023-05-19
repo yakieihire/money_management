@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2023_05_15_133446) do
 
   create_table "expenditures", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.integer "category2_id", null: false
+    t.integer "category_id", null: false
     t.integer "expenditure_amount", null: false
     t.date "register_day", null: false
     t.bigint "user_id", null: false
@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 2023_05_15_133446) do
   end
 
   create_table "incomes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.integer "category_id", null: false
     t.integer "income_amount", null: false
     t.date "register_day", null: false
     t.bigint "user_id", null: false
