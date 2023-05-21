@@ -3,7 +3,7 @@
 <%= form_with model: @expenditure, url: expenditures_path do |form| %>
   <p>
     カテゴリー<br>
-    <%= form.collection_select(:categor2_id, Category.all, :id, :name, {}, {class:"select-box", id:"shop-category"}) %>
+    <%= form.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"shop-category"}) %>
   </p>
   <p>
     支出金額<br>
