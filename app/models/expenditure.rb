@@ -1,5 +1,6 @@
 class Expenditure < ApplicationRecord
-  belongs_to :selection
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :category
   belongs_to :user
   belongs_to :income
 
