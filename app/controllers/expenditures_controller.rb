@@ -17,6 +17,6 @@ class ExpendituresController < ApplicationController
 
   private
   def expenditure_params
-    params.require(:expenditure).permit(:category_id,:expenditure_amount,:register_day).merge(user_id: current_user.id, income_id: params[:income_id])
+    params.require(:expenditure).permit(:category_id,:expenditure_amount,:register_day).merge(user_id: current_user.id)
   end
 end
