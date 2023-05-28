@@ -5,7 +5,6 @@ class CreateExpenditures < ActiveRecord::Migration[6.0]
       t.integer :expenditure_amount, null: false
       t.date :register_day, null: false
       t.references :user, null: false, foreign_key: true
-      t.references :income, null: false, foreign_key: true
       t.timestamps
     end
   end

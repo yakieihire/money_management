@@ -17,10 +17,8 @@ ActiveRecord::Schema.define(version: 2023_05_15_133446) do
     t.integer "expenditure_amount", null: false
     t.date "register_day", null: false
     t.bigint "user_id", null: false
-    t.bigint "income_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["income_id"], name: "index_expenditures_on_income_id"
     t.index ["user_id"], name: "index_expenditures_on_user_id"
   end
 
@@ -46,7 +44,6 @@ ActiveRecord::Schema.define(version: 2023_05_15_133446) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "expenditures", "incomes"
   add_foreign_key "expenditures", "users"
   add_foreign_key "incomes", "users"
 end
