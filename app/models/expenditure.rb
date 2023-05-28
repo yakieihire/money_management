@@ -2,7 +2,6 @@ class Expenditure < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :category
   belongs_to :user
-  belongs_to :income
 
   validates :category_id, numericality: { other_than: 1 } 
   validates :expenditure_amount, presence: true,
