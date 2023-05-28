@@ -1,10 +1,6 @@
-<h1>支出の登録</h1>
+<h1>収入の登録</h1>
 
 <%= form_with model: @income, url: incomes_path do |form| %>
-  <p>
-    カテゴリー<br>
-    <%= form.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"shop-category"}) %>
-  </p>
   <p>
     収入金額<br>
     <%= form.number_field :income_amount %>

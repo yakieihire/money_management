@@ -1,0 +1,19 @@
+<h1>支出の登録</h1>
+
+<%= form_with model: @expenditure, url: expenditures_path do |form| %>
+  <p>
+    カテゴリー<br>
+    <%= form.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"shop-category"}) %>
+  </p>
+  <p>
+    支出金額<br>
+    <%= form.number_field :expenditure_amount %>
+  </p>
+  <p>
+    日付<br>
+    <%= form.date_select :register_day %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

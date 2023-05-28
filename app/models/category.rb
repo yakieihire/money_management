@@ -9,5 +9,5 @@ class Category < ActiveHash::Base
     { id: 7, name: 'その他' },
   ]
   include ActiveHash::Associations
-  has_many :incomes
+  has_many :expenditures
 end
