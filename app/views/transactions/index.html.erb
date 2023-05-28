@@ -46,17 +46,26 @@
     </tr>
 
 <h2>支出</h2>
-<table>
-  <thead>
+<% @expenditure.each do |expenditure| %>
+  <table>
+    <thead>
+      <tr>
+        <th>日付</th>
+        <th>金額</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><%= expenditure.register_day %></td>
+          <td><%= expenditure.expenditure_amount %>円</td>
+        </tr>
+    </tbody>
+  </table>
+<% end %>
     <tr>
-      <th>日付</th>
-      <th>金額</th>
+      <td><strong>合計</strong></td>
+      <td><%= @expenditure.sum(:expenditure_amount) %>円</td>
     </tr>
-  </thead>
-  <tbody>
-
-  </tbody>
-</table>
 
 <h2>差額</h2>
 <table>
